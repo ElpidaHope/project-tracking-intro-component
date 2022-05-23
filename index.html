@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+</head>
+<body class="relative">
+  <div class="w-1/2 ml-auto bg-LightGrayishBlue picBg h-1/2 w-1/2 absolute right-0 -z-1">
+  </div>
+  <nav class="flex justify-between items-center container max-w-6xl mx-auto px-8 py-5 md:py-12 relative">
+    <div>
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="uppercase text-VeryDarkBlue font-bold font-barlowCondensed gap-8 hidden md:flex relative">
+      <a href="#" class="hover:underline">Product</a>
+      <a href="#" class="hover:underline">Features</a>
+      <a href="#" class="hover:underline">Pricing</a>
+      <a href="#" class="ml-20 text-GrayishBlue relative before:content-[''] before:w-2 before:h-2 before:absolute before:bg-GrayishBlue before:-left-10 before:top-1.5 before:rounded-full hover:underline">Login</a>
+    </div>
+
+    <div class="hamburger md:hidden">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </div>
+
+    <div id="menu" class="absolute md:hidden bg-white flex flex-col justify-center items-center gap-4 top-20 w-80 z-10 mx-auto inset-x-0 py-8 uppercase text-VeryDarkBlue font-bold shadow-lg hidden">
+      <a href="#">Product</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#" class="w-full text-center pt-5 pb-3 border-t border-t-GrayishBlue text-GrayishBlue">Login</a>
+    </div>
+  </nav>
+
+  <main class="font-barlow md:flex flex-row-reverse md:py-20 container max-w-6xl mx-auto">
+    <div class="w-full h-80 md:w-1/2">
+      <img src="images/illustration-devices.svg" alt="" class="max-w-none laptop">
+    </div>
+
+    <div class="flex flex-col px-8 gap-3 relative md:gap-4 w-1\/2">
+      <div class="flex gap-6 items-center uppercase">
+        <p class="bg-black rounded-2xl text-white py-1 px-2">New</p>
+        <p class="tracking-wider">Monograph Dashboard</p>
+      </div>
+      <h1 class="uppercase font-bold text-3xl font-barlowCondensed text-VeryDarkBlue mainText">
+        Powerful insights into your team
+      </h1>
+      <p class="md:w-2/3">
+        Project planning and time tracking for agile teams
+      </p>
+      <div class="uppercase flex items-center text-xs gap-4 md:mt-8">
+        <button class="uppercase bg-red text-white rounded-md px-4 py-2">Schedule a demo</button>
+        <p class="md:tracking-widest">To see a preview</p>
+      </div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

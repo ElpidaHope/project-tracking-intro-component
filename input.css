@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+body {
+  overflow: hidden;
+}
+
+
+.hamburger {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  transition: all 0.4s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: translateY(0);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.picBg {
+  border-radius: 0 0 0 60px;
+  height: 360px;
+}
+
+.laptop {
+  width: 500px;
+  transform: translateX(10px);
+}
+
+@media (min-width:768px) {
+  .laptop {
+    width: 900px;
+    transform: translate(10px, -40px);
+  }
+
+  .mainText {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+}
